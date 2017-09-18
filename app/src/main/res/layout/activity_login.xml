@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@mipmap/login_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/log_tv_phone"
+        android:visibility="gone"
+        style="@style/login_page_tv_name_style"
+        android:text="phone" />
+    <EditText
+        android:id="@+id/login_phone"
+        android:maxLength="20"
+        style="@style/login_page_et_style"
+        android:hint="phone" />
+    <TextView
+        android:id="@+id/reg_phone_input"
+        style="@style/input_num_status_style" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/log_tv_pwd"
+        style="@style/login_page_tv_name_style"
+        android:text="password" />
+    <EditText
+        android:maxLength="20"
+        android:id="@+id/login_password"
+        style="@style/login_page_et_style"
+        android:hint="password"
+        android:password="true" />
+    <TextView
+        android:id="@+id/log_pwd_input"
+        style="@style/input_num_status_style" />
+
+
+    <Button
+        android:id="@+id/loginShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e1e1c4"
+        android:layout_margin="15dp"
+        android:text="LOGIN..." />
+
+        <TextView
+            android:id="@+id/registerShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="注册新账号" />
+
+
+
+</LinearLayout>
